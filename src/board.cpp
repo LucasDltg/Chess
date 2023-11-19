@@ -6,7 +6,7 @@ using namespace std;
 
 
 Board::Board()
-:nbrow(8), iswin(0), nbmove(0)
+:nbrow(8), iswin(0), nbmove(1)
 {
     // allocate board
     board = new Piece**[nbrow];
