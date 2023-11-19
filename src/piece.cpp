@@ -93,7 +93,7 @@ vector<Square> Pawn::getlegalcase(Board& board)
                 if(board.getpiece(Square(position.get_line(),position.get_row()-1))->get_color() != color && board.getpiece(Square(position.get_line(),position.get_row()-1))->get_nbmove() + 1 == board.get_nbmove())
                 {
                     lcase.push_back(Square(position.get_line()+factor,position.get_row()-1));
-                    passingpiece = Square(position.get_line(),position.get_row()+1);
+                    passingpiece = Square(position.get_line(),position.get_row()-1);
                 }
     }
 
