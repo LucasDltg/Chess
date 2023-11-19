@@ -387,7 +387,7 @@ void Board::movepiece(Square orig, Square dest)
 {
     Piece *piece = getpiece(orig);
     //update position in Piece
-    piece->move(dest,nbmove);
+    piece->move(dest,nbmove+1);
     //update position on Board
     board[dest.get_line()][dest.get_row()] = piece;
     board[orig.get_line()][orig.get_row()] = nullptr;
